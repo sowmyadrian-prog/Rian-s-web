@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adrian | Website Services</title>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(135deg, #007bff, #003366); /* Blue gradient background */
+        color: #ffffff; /* White text for contrast */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Floating Glass Navigation */
+    nav {
+        position: fixed;
+        top: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 20px;
+        padding: 12px 25px;
+        background: rgba(255,255,255,0.15);
+        backdrop-filter: blur(20px);
+        border-radius: 50px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        z-index: 1000;
+        overflow: hidden;
+    }
+    nav::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(255,255,255,0.3) 10%, transparent 70%);
+        animation: liquidMove 6s infinite linear;
+    }
+    nav a {
+        color: #ffffff;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 1rem;
+        position: relative;
+        z-index: 2;
+        transition: color 0.3s;
+    }
+    nav a:hover {
+        color: #cce5ff;
+    }
+
+    header, .section, footer {
+        width: 90%;
+        max-width: 900px;
+        margin: 30px auto;
+        padding: 30px;
+        border-radius: 20px;
+        background: rgba(255,255,255,0.15);
+        backdrop-filter: blur(20px);
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+        color: #ffffff;
+    }
+    header::before, .section::before, footer::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(255,255,255,0.3) 10%, transparent 70%);
+        animation: liquidMove 6s infinite linear;
+    }
+
+    @keyframes liquidMove {
+        0% { transform: translate(0, 0); }
+        100% { transform: translate(50%, 50%); }
+    }
+
+    header h1 { font-size: 2.5rem; color: #ffffff; position: relative; }
+    header p { font-size: 1.2rem; margin-top: 10px; position: relative; }
+
+    h2 { font-size: 2rem; margin-bottom: 15px; position: relative; }
+    .price { font-size: 1.5rem; font-weight: bold; color: #cce5ff; margin-bottom: 20px; position: relative; }
+
+    .btn {
+        display: inline-block;
+        padding: 15px 25px;
+        background: #ffffff;
+        color: #007bff;
+        font-size: 1.2rem;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: 0.3s;
+        position: relative;
+        z-index: 2;
+    }
+    .btn:hover { background: #cce5ff; color: #003366; }
+
+    /* Contact Form */
+    form {
+        max-width: 500px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        position: relative;
+        z-index: 2;
+    }
+    input, textarea {
+        padding: 12px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        font-size: 1rem;
+    }
+    button {
+        padding: 15px;
+        background: #ffffff;
+        color: #007bff;
+        font-size: 1.2rem;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    button:hover { background: #cce5ff; color: #003366; }
+
+    footer {
+        font-size: 0.9rem;
+        color: #ffffff;
+    }
+</style>
+</head>
+<body>
+
+    <!-- Floating Glass Navigation -->
+    <nav>
+ <a href="#contact">Contact</a>
+ <a href="#home">home</a>
+       <a href="#pricing">pricing</a>
+    </nav>
+
+    <header id="home">
+        <h1>Adrian's websites</h1>
+        <p>Professional Websites for $30 - $150</p>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="section" id="pricing">
+        <h2>Get Your Custom Website Today!</h2>
+        <p class="price">Affordable Pricing: $30 - $100</p>
+        <p>Pay via Zelle:</p>
+        <p><strong>Phone:</strong> +1 (364) 640-4035 | <strong>Email:</strong> sowmyadrian@gmail.com</p>
+        https://www.zellepay.com/Pay with Zelle</a>
+    </section>
+
+    <section class="section">
+        <h2>Get a Free 2-Year Warranty for Your Website</h2>
+    </section>
+  
+      <section class="section">
+      <h2>information</h2>
+        <p>please give enough detil and you can update your website as long as your email addres is enterd the same as the last time you gave a email address you can call back but you must have the email address with you. </p>
+    </section>
+  
+      <section class="section">
+        <h2>pick your domain</h2>
+        <p>primium $50-75: https://www.your_website_name.com baseic $30-50: https://sowmyadrian-prog.github.io/your_website_name/</p>
+    </section>
+  
+        <section class="section">
+        <h2>pick your .???</h2>
+                           
+<ol>
+  <li><strong>trending</strong> .ai $144.99-49.99</li>
+  <li>.com $21.99-0.01</li>
+  <li><strong>primium:</strong> .org $22.99-9.99</li>
+   <li>.show $67.99-9.99</li>
+</ol>
+
+    </section>
+
+
+
+    <!-- Contact Form -->
+    <section class="section" id="contact">
+        <h2>Contact Me</h2>
+      <p>please give a good amount of information to build your site more than welcome for qestions</p>
+<!-- modify this form HTML and place wherever you want your form -->
+<form
+  action="https://formspree.io/f/manzjjrg"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send message</button>
+</form>
+    </section>
+
+    <footer>
+        &copy; 2025 Adrian's websites| All Rights Reserved
+    </footer>
+</body>
+</html>
